@@ -30,6 +30,15 @@ html , body{
     border: none;
     color: #ffffff;
 }
+.btn-3{
+    padding: 21px 40px;
+    border-radius: 48px;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: #FF42A5;
+}
 .title-2{
     color: #0B0223;
     font-size: 48px;
@@ -47,6 +56,10 @@ html , body{
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
+}
+
+.white{
+    color: #ffffff;
 }
 
 /* main CSS*/
@@ -82,7 +95,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 24px;
-    background-color: #FAF0FB;
+    /* background-color: #FAF0FB; */
 }
 
 #menu li{
@@ -377,8 +390,93 @@ a{
     right: 0;
     transform: translate(30%, 30%);
 }
+/* career */
+
+.career-section{
+    width: 100%;
+    background-color: #FF42A5;
+    padding: 120px 0;
+}
+
+#career{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    color: #ffffff;
+}
+.career-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.career-text-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.career-img {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.career-img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 
+/* Game list */
+
+#game-list-section{
+    margin: 120px auto;
+    max-width: 1440px;
+    width: 90%;
+}
+
+.game-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.game-list span{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all ease-in-out .5s;
+}
+
+.game-list span:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 50px;
+}
+
+/* Footer */
+
+#footer{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0B0223;
+    
+}
 
 /* Responsive Part */
 
@@ -397,17 +495,22 @@ a{
         flex-direction: column;
         gap: 20px;
     }
-
+    .hero-section{
+        width: 100%;
+        margin: 0 auto;
+    }
     #hero{
         width: 100%;
-        /* height: 100%; */
         flex-direction: column-reverse;
-        /* gap: 100px; */
     }
     #hero-left{
-        padding: 130px 0;
+        width: 90%;
+        
     }
-
+    #hero-right{
+        width: 90%;
+        
+    }
 /* gamer-section */
 
     #gamer-section{
@@ -465,5 +568,15 @@ a{
         text-align: center;
     }
 
+/* career section */
 
+    #career{
+        flex-direction: column;
+    }
+    .career-img{
+        width: 100%;
+    }
+    .career-text{
+        width: 100%;
+    }
 }
