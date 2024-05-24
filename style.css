@@ -566,8 +566,14 @@ a{
     }
     #hero-left{
         width: 90%;
-        
+        align-items: center;
+        text-align: center;
     }
+    #btn{
+        display: flex;
+        gap: 10px;
+    }
+
     #hero-right{
         width: 90%;
         
@@ -648,6 +654,79 @@ a{
 }
 
 
+}
 
+/* mobile responsive */
 
+@media screen and (max-width: 425px) {
+    #hero-left h1{
+        font-size: 70px;
+    }
+
+    #hero-left h2{
+        font-size: 40px;
+    }
+    #hero-left h4{
+        font-size: 16px;
+        text-align: start;
+    }
+
+    #gamer-right h2{
+        font-size: 36px;
+    }
+
+    #gamer-right p{
+        font-size: 16px;
+    }
+    #gamer-right h4 span{
+        font-size: 28px;
+    }
+
+    #game-videos h2{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #game-videos p{
+        font-size: 16px;
+    }
+
+    
+
+    .card p{
+        font-size: 16px;
+    }
+    .card h4{
+        font-size: 20px;
+    }
+
+    #btn{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    #btn .btn-1{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    #btn .btn-2{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    #footer {
+        gap: 30px;
+    }
+    #footer .f2 {
+        margin: 0 auto;
+    }
+    #footer .f3 {
+        margin: 0 auto;
+    }
+    #footer .f4 {
+        margin: 0 auto;
+    }
+    #footer .f5 {
+        margin: 0 auto;
+    }
 }
